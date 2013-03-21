@@ -1,0 +1,6 @@
+location /transmission {
+	include /etc/nginx/conf.d/proxy.conf;
+
+	proxy_pass http://localhost:9091/transmission;
+	proxy_set_header Authorization "Basic dHJhbnNtaXNzaW9uOnRyYW5zbWlzc2lvbg==";
+}
