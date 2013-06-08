@@ -14,12 +14,12 @@
 #
 class transmission::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$package_name = $::operatingsystem ? {
-		default => 'transmission-daemon'
-	}
+  $package_name = $::operatingsystem ? {
+    default => 'transmission-daemon'
+  }
 
-	$enabled = true
+  $enabled = true
 
 }
